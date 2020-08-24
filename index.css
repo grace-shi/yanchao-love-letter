@@ -1,0 +1,83 @@
+html {
+  background-color: #f4f5f9
+}
+.container {
+  position: relative;
+  padding: 50px;
+  display: flex;
+  justify-content: start;
+}
+
+.heart {
+  width: 45px;
+  height: 45px;
+  background-color: #f1404b;
+  position: absolute;
+  transform: rotate(45deg);
+  top: 150px;
+  right: 25px;
+  animation: beat 2s infinite;
+}
+
+.heart:after, .heart:before {
+  content: '';
+  height: 45px;
+  width: 45px;
+  border-radius: 45px;
+  background-color: #f1404b;
+  position: absolute;
+}
+
+.heart:after {
+  top: -25px;
+}
+.heart:before {
+  left: -25px;
+}
+
+@keyframes beat {
+  0% { transform: scale(1, 1) rotate(45deg); }
+  5% { transform: scale(1.1, 1.1) rotate(45deg);  }
+  10% { transform: scale(1.12, 1.12) rotate(45deg);  }
+  20% { transform: scale(1.13, 1.13 ) rotate(45deg);  }
+  30% { transform: scale(1.14, 1.14 ) rotate(45deg);  }
+  40% { transform: scale(1.15, 1.15 ) rotate(45deg);  }
+  50% { transform: scale(1.17, 1.17 ) rotate(45deg);  }
+  60% { transform: scale(1.15, 1.15 ) rotate(45deg);  }
+  70% { transform: scale(1.14, 1.14 ) rotate(45deg);  }
+  80% { transform: scale(1.13, 1.13 ) rotate(45deg);  }
+  90% { transform: scale(1.12, 1.12 ) rotate(45deg);  }
+  100% { transform: scale(1, 1 ) rotate(45deg);  }
+
+}
+
+.love-letter {
+  top: 80px;
+  left: 100px;
+  position: absolute;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
+}
+
+#cursor {
+  opacity: 0.2;
+  z-index: 100;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background: #fff;
+  cursor: crosshair;
+}
+
+.heart-cursor { display: none }
+

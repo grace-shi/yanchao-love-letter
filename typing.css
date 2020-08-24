@@ -1,0 +1,182 @@
+.love-letter p {
+  color: #383A3F;
+  border-right: .15em solid orange;
+  font-family: monospace;
+  font-size: 16px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.love-letter .letter-date {
+  color: #F68657;
+}
+
+.love-letter p:nth-child(1) {
+  width: 580px; /* manually set width */
+  animation: type 16s steps(100, end);
+  animation-fill-mode: forwards;
+}
+
+.love-letter p:nth-child(2) {
+  width: 580px; /* manually set width */
+  opacity: 0;
+  animation: type2 16s steps(40, end);
+  animation-delay: 16s;
+  animation-fill-mode: forwards;
+}
+
+.love-letter p:nth-child(3) {
+  width: 910px; /* manually set width */
+  opacity: 0;
+  animation: type2 16s steps(20, end);
+  animation-delay: 32s;
+  animation-fill-mode: forwards;
+}
+
+.love-letter p:nth-child(4) {
+  width: 780px; /* manually set width */
+  opacity: 0;
+  animation: type2 12s steps(20, end);
+  animation-delay: 44s;
+  animation-fill-mode: forwards;
+}
+
+.love-letter p:nth-child(5) {
+  width: 580px; /* manually set width */
+  opacity: 0;
+  animation: type2 12s steps(20, end);
+  animation-delay: 56s;
+  animation-fill-mode: forwards;
+}
+
+.love-letter p:nth-child(6) {
+  width: 540px; /* manually set width */
+  opacity: 0;
+  animation: type2 12s steps(20, end);
+  animation-delay: 68s;
+  animation-fill-mode: forwards;
+}
+
+.love-letter p:nth-child(7) {
+  width: 700px; /* manually set width */
+  opacity: 0;
+  animation: type2 12s steps(20, end);
+  animation-delay: 80s;
+  animation-fill-mode: forwards;
+}
+
+.love-letter p:nth-child(8) {
+  width: 700px; /* manually set width */
+  opacity: 0;
+  animation: type3 12s steps(20, end);
+  animation-delay: 92s;
+  animation-fill-mode: forwards;
+}
+
+.love-letter p:nth-child(9) {
+  width: 700px; /* manually set width */
+  opacity: 0;
+  animation: type3 12s steps(20, end);
+  animation-delay: 104s;
+  animation-fill-mode: forwards;
+}
+
+.love-letter div {
+  opacity: 0;
+  width: auto; /* manually set width */
+  margin-left: 30%;
+  margin-right: auto;
+  animation: type3 8s steps(100, end), blink .5s step-end infinite alternate;
+  animation-delay: 116s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes type {
+  0% {
+    width: 0;
+  }
+  99.9% {
+    border-right: .15em solid orange;
+  }
+  100% {
+    border: none;
+  }
+}
+
+@-webkit-keyframes type {
+  0% {
+    width: 0;
+  }
+  99.9% {
+    border-right: .15em solid orange;
+  }
+  100% {
+    border: none;
+  }
+}
+
+@keyframes type2 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: .15em solid orange;
+  }
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+
+@-webkit-keyframes type2 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: .15em solid orange;
+  }
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+
+@keyframes type3 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes type3 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+@-webkit-keyframes blink {
+  50% {
+    border-color: tranparent;
+  }
+}
