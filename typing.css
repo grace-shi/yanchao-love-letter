@@ -33,7 +33,7 @@
 }
 
 .love-letter p:nth-child(4) {
-  width: 780px; /* manually set width */
+  width: 780px;
   opacity: 0;
   animation: type2 12s steps(20, end);
   animation-delay: 44s;
